@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/pay"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dAccount"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Account Number"
+
+            android:id="@+id/accountedt"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dAccountName"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dAccount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Account Name"
+
+            android:id="@+id/accountNameedt"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dAccountBranch"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dAccountName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Enter Branch"
+
+            android:id="@+id/bAccountBranch"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dName"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dAccountBranch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+
+        >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" Enter Amount"
+
+        android:id="@+id/nameedt"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sumit"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/dName"
+        android:textSize="20dp"
+        android:padding="20dp"
+        android:id="@+id/paybtn"/>
+    </RelativeLayout>
+</ScrollView>

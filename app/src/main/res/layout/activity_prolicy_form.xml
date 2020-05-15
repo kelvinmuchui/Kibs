@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProlicyFormActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textprim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium frequency"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textprim"
+            android:id="@+id/radiogroup"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly"/>
+            <RadioButton
+                android:id="@+id/quataly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="quaterly"/>
+            <RadioButton
+                android:id="@+id/half"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="half yearly"/>
+            <RadioButton
+                android:id="@+id/anually"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Anually"/>
+        </LinearLayout>
+
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="170dp"
+            android:id="@+id/dName"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiogroup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sum assured" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="170dp"
+            android:id="@+id/dID"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiogroup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/dName"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ptotalP"
+                android:ems="10"
+                android:hint="Total Premium" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/pterm"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/pterms"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Premium terms" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/plterm"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pterm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ppolicy"
+                android:ems="10"
+                android:hint="Policy terms" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ptotal"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plterm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ptotalPrem"
+                android:ems="10"
+                android:hint="Total Premium  in SHS" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textbenefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ptotal"
+            android:text="@string/benefits_optional"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textbenefits"
+            android:id="@+id/radiogroup2"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                >
+                <RadioButton
+                    android:id="@+id/personalRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Accident"/>
+                <RadioButton
+                    android:id="@+id/funerelRadio"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Funeral expenses"
+                    />
+                <RadioButton
+                    android:id="@+id/illnessRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="critical Illness"
+                    android:layout_below="@id/personalRadio"/>
+                <RadioButton
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/deathRadio"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/funerelRadio"
+                    android:text="Accidental Death"/>
+            </RelativeLayout>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_of_payment"
+            android:textColor="#000"
+            android:layout_below="@id/radiogroup2"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radiogroup2"
+            android:id="@+id/radiogroup3"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                >
+                <RadioButton
+                    android:id="@+id/debitRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debit"/>
+                <RadioButton
+                    android:id="@+id/checkRadio"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Check Off"
+                    />
+                <RadioButton
+                    android:id="@+id/chequeRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheque"
+                    android:layout_below="@id/debitRadio"/>
+
+            </RelativeLayout>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginLeft="20dp"
+            android:text="Back"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/radiogroup3"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:id="@+id/backbtn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#fff"
+            android:layout_marginRight="20dp"
+            android:padding="20dp"
+            android:text="Next"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/radiogroup3"
+            android:textSize="20dp"
+            android:id="@+id/nextbtn"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

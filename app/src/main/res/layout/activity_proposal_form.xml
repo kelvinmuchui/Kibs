@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProposalFormActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/producttxt"
+        android:layout_centerHorizontal="true"
+        android:text="Product"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"/>
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/producttxt"
+    android:id="@+id/radioProduct">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/academiaradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Academia"/>
+    <RadioButton
+        android:id="@+id/investradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invest Plan"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/academiaradio"/>
+    <RadioButton
+        android:id="@+id/keymanradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Key Man"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/investradio"/>
+    <RadioButton
+
+        android:id="@+id/saverradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Saver"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="43dp"
+        />
+    <RadioButton
+        android:id="@+id/familyradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family Protictor"
+        android:layout_below="@id/saverradio"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+</RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dependant"
+        android:layout_centerHorizontal="true"
+        android:text="Dependant"
+        android:layout_below="@id/radioProduct"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="170dp"
+        android:id="@+id/dName"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dependant"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="170dp"
+        android:id="@+id/dID"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dependant"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/dName"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ID" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dDob"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DoB" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="170dp"
+        android:layout_toRightOf="@id/dDob"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Gender" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dnationality"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dDob"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nationality" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dAddress"
+        android:layout_width="170dp"
+        android:layout_toRightOf="@id/dnationality"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dDob"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dnationality"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "530999055080",
+    "firebase_url": "https://chat254-cab4e.firebaseio.com",
+    "project_id": "chat254-cab4e",
+    "storage_bucket": "chat254-cab4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530999055080:android:d258a1eae64786e2",
+        "android_client_info": {
+          "package_name": "com.example.kelvin.chat254"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530999055080-5brr92rou71r03uvbfmh0ut1t2b616of.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kelvin.chat254",
+            "certificate_hash": "51368c541105d5ab0bb110a00c15870718889847"
+          }
+        },
+        {
+          "client_id": "530999055080-ojovkout0dq8va3t9rmo4larobo1ge34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASJctIKDXYX85p4snMKCgqzUTRd6qfCa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530999055080-ojovkout0dq8va3t9rmo4larobo1ge34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530999055080:android:6bb42394d31fd6731e2f5d",
+        "android_client_info": {
+          "package_name": "com.example.menuka.loginandregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530999055080-6066cc2f6v0eql0qu6ok5j8d3l6pvo2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.menuka.loginandregistration",
+            "certificate_hash": "555dfec1b9f8c1d7cfa3cfe8b88e70e6771765b7"
+          }
+        },
+        {
+          "client_id": "530999055080-ojovkout0dq8va3t9rmo4larobo1ge34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASJctIKDXYX85p4snMKCgqzUTRd6qfCa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530999055080-ojovkout0dq8va3t9rmo4larobo1ge34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530999055080:android:fadb7133d86a684b1e2f5d",
+        "android_client_info": {
+          "package_name": "com.kibaki.insurance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530999055080-spg9e7j4cp3go1fucd18vrblb2dlirrv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kibaki.insurance",
+            "certificate_hash": "555dfec1b9f8c1d7cfa3cfe8b88e70e6771765b7"
+          }
+        },
+        {
+          "client_id": "530999055080-ojovkout0dq8va3t9rmo4larobo1ge34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASJctIKDXYX85p4snMKCgqzUTRd6qfCa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530999055080-ojovkout0dq8va3t9rmo4larobo1ge34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
